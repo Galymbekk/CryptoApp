@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('style/reset');
+
+body,html{
+    background-color: #000;
+    height: 100%;
+    color: #F2F2F2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.crypto{
+    position: relative;
+}
+
+.back-logos{
+    position: absolute;
+    right: 62px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.background-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logoLiteCoin{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    margin-right: -50px;
+}
+
+.background-icons img{
+    height: calc(42%);
+}
+
+.logoLiteCoin img{
+    height: 42%;
+}
+
+.main{
+    display: flex;
+}
+
+.content{
+    width: 60%;
+    margin-left: 62px;
+}
+
+.feedbacks{
+    width:  40%;
+}
+
+.main h1{
+    font-size: 64px;
+    line-height: 100.8px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    /* width: 1008px; */
+}
+
+.txt-gradient{
+    background: linear-gradient(92.01deg, rgba(124, 111, 207, 0.97) 0%, rgba(116, 174, 170, 0.95) 49.13%, #6FCF97 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+    font-family: 'Teko Regular';
+    src: url('./fonts/Teko-Regular.ttf');
+}
+
+.main h4{
+    font-family: 'Teko Regular';
+    color: #828282;
+    font-weight: 400;
+    line-height: 40.8px;
+    font-size: 30px;
+}
+
+.advantages{
+    display: flex;
+    gap: 126px;
+    margin-top: 58px;
+}
+
+.advantage-item h2{
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 3px;
+}
+
+.advantage-item h4{
+    color: #F2F2F24D;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@font-face {
+    font-family: 'Teko Medium';
+    src: url('./fonts/Teko-Medium.ttf');
+}
+
+.btn-join{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1C1A1A;
+    padding: 14px 193px;
+    background: linear-gradient(92.01deg, rgba(124, 111, 207, 0.97) 0%, rgba(116, 174, 170, 0.95) 49.13%, #6FCF97 100%);
+    border-radius: 16px;
+    font-family: 'Teko Medium';
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 150px 0px #A5BFB46B;
+    margin-bottom: 50px;
+}
+
+.getApp-links{
+    display: flex;
+    gap: 20px;
+}
+
+.getApp-item{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 12px 8px 12px;
+    border-radius: 12px;
+    opacity: 0px;
+    background-color: #302D2D57;
+}
+
+.getApp-content h4:first-child{
+    font-size: 12px;
+    line-height: 12px;
+    color: #F2F2F266;
+}
+
+.getApp-content h4:nth-child(2){
+    font-size: 20px;
+    line-height: 24px;
+    color: #828282;
 }
